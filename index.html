@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bride - Cafe and Eatery</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="src/css/index.css">
+
+  <!-- Google-Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bangers&family=Concert+One&family=Cute+Font&family=League+Spartan:wght@100..900&family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shrikhand&display=swap"
+    rel="stylesheet">
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+
+<main class="w-full h-[210vh] relative">
+  <!-- Header -->
+  <div id="loadBar-top"
+    class="absolute fixed top-0 w-full h-4 px-5 py-5 bg-white flex justify-center items-center shadow-lg z-1000">
+    <span class="text-sm font-bold concert-one-regular uppercase text-lime-800">&rarr; Bride Cafe and Eatery
+      &larr;</span>
+  </div>
+  <!-- Background Of Header -->
+  <div class="absolute w-full h-full flex overflow-hidden -z-50">
+    <div id="loadBar-container" class="flex flex-col w-full h-full">
+      <div class="loadBar-el w-full h-[35vh] bg-lime-800 backdrop-sm flex justify-around items-center"
+        style="background-image: url('src/assets/img/img3.jpg');
+              background-position: bottom;
+              background-size: cover;
+              background-repeat: no-repeat;">
+        <!-- Start landing-page -->
+        <div class="flex flex-col justify-center items-start px-5 py-4">
+          <div class="wave w-[350px] h-12 bg-lime-600 hidden md:block"></div>
+            <h1 id="textSlideUp-el" class="text-3xl md:text-6xl font-bold text-white uppercase concert-one-regular tracking-widest">
+              welcome to Bride</h1>
+            <p id="textSlideLeft-el" class="text-lg md:text-2xl font-semibold text-gray-300 my-2 concert-one-regular tracking-wider overflow-hidden">
+              where flavors connect and memories are
+              made.
+            </p>
+            <div class="w-full">
+              <button id="loadBtn-el" class="bg-white text-neutral-500 font-bold px-4 py-2 rounded-full">
+                <a href="#">Open map</a></button>
+            </div>
+        </div>
+        <div class="w-full h-full flex justify-end items-center">
+          <img class="w-full h-full" src="src/assets/img/img3.jpg" alt="image one"
+            style="clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);">
+        </div>
+        <!-- End Landing-page -->
+      </div>
+      <div class="loadBar-el w-full h-[25vh] bg-lime-700 backdrop-sm">
+        
+      </div>
+      <div class="loadBar-el w-full h-[25vh] bg-lime-600 backdrop-sm"></div>
+      <div class="loadBar-el w-full h-[25vh] bg-lime-500 backdrop-sm"></div>
+      <div class="loadBar-el w-full h-[25vh] bg-lime-400 backdrop-sm"></div>
+      <div class="loadBar-el w-full h-[25vh] bg-lime-300 backdrop-sm"></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <!-- <div id="loadBar-top" class="relative fixed top-0 w-full h-4 px-5 py-5 bg-white flex justify-center items-center shadow-lg z-1000">
+    <span class="text-sm font-bold concert-one-regular uppercase text-lime-800">&rarr; Bridge Cafe and Eatery &larr;</span>
+  </div> -->
+
+
+  <!-- <div class="w-full h-4 px-5 py-5"></div> -->
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Gsap Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js"></script>
+  <script src="src/js/script.js"></script>
+</body>
+</html>
