@@ -1,6 +1,6 @@
 // Animation for Load-bar
 // GSAP Load Bar Animation
-document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('DOMContentLoaded', () => {
   const bars = document.querySelectorAll('.loadBar-el');
 
 
@@ -30,9 +30,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // Initial button animation
-  const loadBtn = document.getElementById('loadBtn-el');
-  const textSlideUp = document.getElementById('textSlideUp-el');
-  const textSlideLeft = document.getElementById('textSlideLeft-el');
+  const loadBtn = document.querySelectorAll('#loadBtn-el');
+  const textSlideUp = document.querySelectorAll('#textSlideUp-el');
+  const textSlideLeft = document.querySelectorAll('#textSlideLeft-el');
+  const imgUpOpac = document.querySelectorAll('#imgSlideupOpac-el');
+
+  gsap.set(imgUpOpac, { opacity: 0, y: 30});
+  gsap.to(imgUpOpac, {
+    opacity: 1,
+    y: 0,
+    delay: 1.75,
+    duration: 1.3,
+    ease: "power3.inOut",
+  })
 
   gsap.set(textSlideLeft, { opacity: 0, x: -10 });
   gsap.to(textSlideLeft, {
